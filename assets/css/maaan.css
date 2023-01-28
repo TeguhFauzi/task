@@ -17,6 +17,7 @@ body {
 }
 
 .garr {
+
     width: 65vw;
 }
 
@@ -36,9 +37,10 @@ body {
 
 
 .bar {
-
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 35vw;
 }
 
 li {
@@ -67,8 +69,8 @@ li {
 .home {
     text-decoration: none;
     background-color: crimson;
-    padding: 10;
     color: white;
+    padding: 10;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
