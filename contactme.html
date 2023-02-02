@@ -4,68 +4,74 @@
     <title>
         Form
     </title>
-    <link rel="stylesheet" href="assets\css\maaan.css">
+    <link rel="stylesheet" href="alll.css">
 </head>
 
 <body>
-    <div>
-        <nav class="navi">
-            <div class="garr">
-                <div class="log">
-                    <img class="gamt" src="assets\images\jons.ico" alt="icon">
+    <div class="bg">
+        <nav class="garis">
+            <ul class="nav">
+                <div class="tiga">
+                    <li class="under"><a href="index.html">
+                            <img class="dwLogo" src="assets\images\dwLogo.png"></a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="under">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myProject.html" class="under">
+                            <p>My Project</p>
+                        </a>
+                    </li>
                 </div>
-            </div>
-            <ul class="bar">
-                <li><a class="cont" href="index.html">Home</a></li>
-                <li><a class="home" href="#">Find Me On</a></li>
-                <li><a class="not" href="#">Notification</a></li>
             </ul>
         </nav>
-        <!-- ennnn -->
-        <div class="por">
-            <form>
-                <div>
-                    <div class="jud">
-                        <h1>Get In Touch.</h1>
-                    </div>
-                    <div class="warnn">
-                        <div class="forrr">
-                            <p>Input Your Name</p>
-                            <div class="bung">
-                                <input id="nama" type="text"  placeholder="Fullname">
-
-                            </div>
-                            <div class="em">
-                                <p>Email</p>
-                            </div>
-                            <input type="text" id="emm" placeholder="Must be fill">
-                            <br><br>
-                            <div class="em">
-                                <p>Your Message</p>
-                            </div>
-                            <textarea type="text" id="subject" placeholder="Must be fill"></textarea>
-                            <br><br>
-                            <div class="inl">
-                                <div class="ukuran">
-                                    <label id="birt" for="birthday">Date Today</label>
-                                    <input id="tanggal" type="date" name="Today">
-                                </div>
-                                <select id="reli">
-                                    <option type="select">Front-end</option>
-                                    <option type="select">Back-end</option>
-                                    <option type="select">Fullstack</option>
-                                </select>
-                            </div>
-                            <br><br>
-                        </div>
-                        <button id="submit" type="button" onclick="getData()">Submit</button>
-                        <input class="res" type="reset" value="Reset"></span>
-                    </div>
-                </div>
-            </form>
+        <div class="cont">
+            <div class="koti">
+                <a href="contactme.html" class="under">Contact Me</a>
+            </div>
         </div>
     </div>
-    <script src="assets\code.js"></script>
+    <!-- seleeessseee -->
+
+    <div class="ukirrr">
+        <form class="form">
+            <h2>Get In Touch</h2>
+            <div class="isii">
+                <div class="kottak">
+                    <p class=" pfont">Name</p>
+                    <input id="name" class="panjj" type="text">
+                    <br><br>
+                    <p class="pfont">Email</p>
+                    <input id="email" class="panjj" type="text">
+                    <br><br>
+                    <p class="pfont">Phone Number</p>
+                    <input id="phone"class="panjj" type="text">
+                    <br><br>
+                    <p class="pfont">Subject</p>
+                    <select id="option" class="panjj">
+                        <option>Front-End</option>
+                        <option>Back-End</option>
+                        <option>FullStack</option>
+                    </select>
+                    <br><br>
+                    <p class="pfont">Your Message</p>
+                    <textarea id="yourMessage"class="panjj1"></textarea>
+                </div>
+            </div>
+            <div class="tombol">
+                <div class="tombol1">
+                    <button onclick="getData()" id="submit" type="submit">Submit</button>
+                </div>
+                <div class="tombol2">
+                    <button id="reset" type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+<script src="assets\code.js"></script>
 </body>
 
 </html>

@@ -1,36 +1,35 @@
 function getData() {
-    let nama = document.getElementById("nama").value
-    let email = document.getElementById("emm").value
-    let subject = document.getElementById("subject").value
-    let tanggal = document.getElementById("tanggal").value
-    let job = document.getElementById("reli").value
+    let name = document.getElementById("name").value
+    let email = document.getElementById("email").value
+    let phone = document.getElementById("phone").value
+    let option = document.getElementById("option").value
+    let yourMessage = document.getElementById("yourMessage").value
 
 
-    if (nama == "") {
-        alert("Nama tidak boleh Kosong!")
-
+    if (name == "") {
+        alert("Tidak boleh Kosong!")
     } else if (email == "") {
-        alert("Email tidak boleh kosong!")
-    } else if (subject == "") {
-        alert("Harus di isi!")
-    } else if (tanggal == "") {
-        alert("Harus di isi!")
-    } else if (job == "") {
-        alert("Dipilih seusai option!")
+        alert("Tidak boleh kosong!")
+    } else if (phone == "") {
+        alert("Tidak Boleh Kosong!")
+    } else if (option == "") {
+        alert("Tidak Boleh Kosong!")
+    } else if (yourMessage == "") {
+        alert("Tidak Boleh Kosong!")
     }
 
     const defaultEmail = "teguhfauzi55@gmail.com"
 
     let mailTo = document.createElement('a')
-    mailTo.href = `mailto:${defaultEmail}?subject=${subject}&body=Halo nama saya ${nama}, Saya seorang ${job}. Ini ${tanggal}, Tolong hubungi saya di ${email}`
+    mailTo.href = `mailto:${defaultEmail}?subject=${option}&body=Halo nama saya ${name},${yourMessage}. Ini nomor HP saya ${phone}, Tolong hubungi saya di ${email}`
     mailTo.click()
 
     let audience = {
-        nama,
+        name,
         email,
-        subject,
-        tanggal,
-        job
+        phone,
+        option,
+        yourMessage
     }
 
     console.log(audience)

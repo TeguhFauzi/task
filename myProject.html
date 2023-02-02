@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <title>
+        My Project
+    </title>
+    <link rel="stylesheet" href="alll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navvvvv -->
+    <div class="bg">
+        <nav class="garis">
+            <ul class="nav">
+                <div class="tiga">
+                    <li class="under"><a href="#">
+                            <img class="dwLogo" src="assets\images\dwLogo.png"></a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="under">
+                            <p class="ho">Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="under1">
+                            <p>My Project</p>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <div class="cont">
+            <div class="koti">
+                <a href="contactme.html" class="under">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <!-- navvvsel -->
+
+    <div class="myP">
+        <div class="koka">
+            <h1>Add My Project</h1>
+            <form onsubmit="getData(event)" id="submtt">
+                <div class="pr">
+                    <label for="">Title</label>
+                    <input id="title" class="ert" type="text">
+                    <br><br><br>
+                    <div class="dat">
+                        <div class="start">
+                            <label for="">Start Date</label>
+                            <input id="startDate" class="ert1" type="date">
+                        </div>
+                        <div class="end">
+                            <label for="">End Date</label>
+                            <input id="endDate" class="ert2" type="date">
+                        </div>
+                    </div>
+                    <br>
+                    <label for="">Description</label>
+                    <textarea id="description" class="descir"></textarea>
+                    <br><br>
+                    <h4>Computer Language</h4>
+                    <div class="tako">
+                        <div class="po">
+                            <input id="Java" type="checkbox">
+                            <label>Java</label>
+                            <br><br>
+                            <input id="Javascript" type="checkbox">
+                            <label>Javascript</label>
+                            <br>
+                        </div>
+                        <div class="pi">
+                            <input id="PHP" type="checkbox">
+                            <label>PHP</label>
+                            <br><br>
+                            <input id="Phyton" type="checkbox">
+                            <label>Phyton</label>
+                        </div>
+                    </div>
+                    <div class="upl">
+                        <input id="imageUp" type="file" name="filename">
+                    </div>
+                    <div class="inpw">
+                        <button id="inp">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- projectBaru -->
+
+
+    <div class="addProject">
+        <br><br><br><br><br>
+        <h1>My Project</h1>
+        <br><br>
+        <div class="catur">
+            <div id="cardblog" class="atur">
+                <div class="cardBlog">
+                    <div class="gantK">
+                        <img class="gant" src="assets\images\blog.png">
+                    </div>
+                    <br>
+                    <div class="blogD">
+                        <a href="inttteerr.html" class="judl">
+                            <h5>Coding di Indonesia Cukup Berkembang dan Banyak Peminat</h5>
+                        </a>
+                        <p>Posted at :  2 Months go.</p>
+                        <br>
+                        <p>Duration :   5 Months</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit sit excepturi reiciendis
+                            dolorum eveniet cum nam iste ipsum veritatis optio magni maxime sapiente consectetur illo in
+                            voluptate, maiores laboriosam accusamus.</p>
+                        <div class="icc">
+                            <i id="Java" class="fa-brands fa-java"></i>
+                            <i id="Javascript"class="fa-brands fa-php"></i>
+                            <i id="PHP"class="fa-brands fa-square-js"></i>
+                            <i id="Phyton" class="fa-brands fa-python"></i>
+                        </div>
+                        <br><br>
+                        <div class="buttt">
+                           <a href="#"><button class="ed">Edit</button></a> 
+                           <a href="#"><button class="del">Delete</button></a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets\blogss.js"></script>
+</body>
+
+</html>
